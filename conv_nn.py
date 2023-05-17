@@ -35,7 +35,7 @@ def pool(input_image, pool_kernel):
     result = np.ones((result_size, result_size))
     for i in range(result_size):
         for j in range(result_size):
-            
+
             result[i][j] = np.sum(input_image[i*kernel_size:(i+1)*kernel_size,j*kernel_size:(j+1)*kernel_size] * pool_kernel)
     return result
 
