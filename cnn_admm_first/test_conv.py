@@ -31,7 +31,7 @@ train_labels_one_hot[train_labels_one_hot == 1] = 0.99
 test_labels_one_hot[test_labels_one_hot == 0] = 0.01
 test_labels_one_hot[test_labels_one_hot == 1] = 0.99
 
-import conv_nn as cnn
+import cnn.conv_nn as cnn
 
 CNN = cnn.ConvNeuralNetwork(no_of_cnn_kernels=20,
                             conv_kernel_size=9,
